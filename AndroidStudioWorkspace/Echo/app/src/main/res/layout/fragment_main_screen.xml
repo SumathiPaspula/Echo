@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/content_main"
+        android:clickable="true"
+        android:focusable="true">
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/visibleLayout">
+
+        <android.support.v7.widget.RecyclerView
+                android:id="@+id/contentMain"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+        </android.support.v7.widget.RecyclerView>
+
+        <RelativeLayout
+                android:id="@+id/hiddenBarMainScreen"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:visibility="invisible"
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorPrimary">
+
+            <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/playPauseButton"
+                    android:background="@drawable/pause_icon"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:contentDescription="@string/app_name"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_alignParentTop="true"/>
+
+            <ImageView
+                    android:id="@+id/defaultMusic"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:minWidth="0dp"
+                    android:minHeight="0dp"
+                    android:background="@drawable/now_playing_bar_eq_image"
+                    android:layout_marginStart="16dp"
+                    android:layout_alignParentStart="true"
+                    android:contentDescription="@string/app_name"/>
+
+            <TextView
+                    android:id="@+id/nowPlaying"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/defaultMusic"
+                    android:layout_toEndOf="@id/defaultMusic"
+                    android:layout_toLeftOf="@+id/playPauseButton"
+                    android:layout_toStartOf="@+id/playPauseButton"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/now_playing"
+                    android:singleLine="true"
+                    android:textColor="#bdbdbd"/>
+
+            <TextView
+                    android:id="@+id/songTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/nowPlaying"
+                    android:ellipsize="marquee"
+                    android:maxWidth="160dp"
+                    android:singleLine="true"
+                    android:text="@string/more"
+                    android:textColor="#FFFFFF"
+                    android:layout_alignLeft="@id/nowPlaying"
+                    android:layout_alignStart="@id/nowPlaying"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/noSongs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:visibility="invisible">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/no_songs_available"
+                android:textColor="#000000"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

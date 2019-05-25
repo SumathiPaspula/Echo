@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Echo</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="more">…</string>
+    <string name="now_playing">Now Playing</string>
+    <string name="shuffle">shuffle</string>
+    <string name="loop">loop</string>
+    <string name="next">next</string>
+    <string name="prev">prev</string>
+    <string name="artist_name">Artist name</string>
+    <string name="song_name">Song name</string>
+    <string name="pause">pause</string>
+    <string name="favourite">favourite</string>
+    <string name="noFavs">You have not added any favorites!</string>
+    <string name="ShakeFeature">Shake to change song</string>
+    <string name="back_to_list">Back to list</string>
+    <string name="recently_added">Recently added</string>
+    <string name="by_recently_added">By recently added</string>
+    <string name="by_name">By name</string>
+    <string name="no_songs_available">No songs available</string>
+    <string name="developer">Developed by Sumathi</string>
+    <string name="app_version">App Version 1.0</string>
+    <string name="credits">This app has been developed as part of Internshala\'s \'Android App Development\' training.
+    </string>
+</resources>
